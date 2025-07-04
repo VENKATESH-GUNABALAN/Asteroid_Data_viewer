@@ -12,7 +12,7 @@ MYSQL_PORT = 4000
 MYSQL_DATABASE = "Asteroid_Data_1"
 
 # Function to connect to MySQL database
-def connect_to_mysql():
+def connect_to_mysql_2():
     try:
         connection = mysql.connector.connect(
             host=MYSQL_HOST,
@@ -231,7 +231,7 @@ mode = st.sidebar.radio("Choose an option", ["Predefined Queries", "Filter Aster
 
 
 # Connect to database
-connection = connect_to_mysql()
+connection = connect_to_mysql_2()
 
 if connection:
     if mode == "Predefined Queries":
